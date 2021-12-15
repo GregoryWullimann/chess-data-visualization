@@ -81,10 +81,12 @@ def generate_line_plot(lines, x, y):
     sns.set(style="whitegrid")
     for i, line in enumerate(lines):
         plt.plot(x[i], y[i], label=line)
+    plt.axhline(y=0.5, color='black', linestyle='dashed')
+    plt.ylim([0, 1])
     plt.xlabel("Elo Rating")
     plt.ylabel("Win rate")
     plt.title("Win rate of Gambits by Elo Rating")
-    plt.legend()
+    plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
     plt.show()
 
 generate_line_plot(lines, x, y)
