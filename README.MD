@@ -38,3 +38,6 @@ There are 4 main script to run, each one will generate a different chart. To eac
 In order to run a script only a PGN file is required, the other arguments are optional.
 
     python3 elo_rating_distribution.py --pgn ./data/lichess_db_standard_rated_2017-01.pgn
+    python3 elo_win_rate.py --pgn ./data/lichess_db_standard_rated_2017-01.pgn
+    python3 most_common_moves.py --pgn ./data/lichess_db_standard_rated_2017-01.pgn
+    python3 gambit_win_rate_by_elo.py --pgn ./data/lichess_db_standard_rated_2017-01.pgn
